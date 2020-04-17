@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #f2f2f2; */
+    /* 328dc2 */
+    background-image: url(./img/iphone.png);
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 600;
+    font-size: 32px;
+}
+#container {
+    position: relative;
+    top: 70px;
+    left: 40%;
+    flex-direction: column;
+    display: flex;
+    width: 255px;
+    height: 455px;
+}
+#time {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+    left: 55px;
+    width: 150px;
+}
+#time img {
+    position: absolute;
+    width: 50px;
+    top: -60px;
+    left: 45px;
+    height: 50px;
+}
+#clock_dial {
+    opacity: 0.2
+}
+#interval_section {
+    position: absolute;
+    overflow: auto;
+    left: 15%;
+    top: 130px;
+    max-height: 245px;
+    width: 195px;
+    font-size: 18px;
+}
+.numeric_value {
+    padding: 5px 0px;
+    list-style-position: inside;
+}
+#buttons, #cont_reset_btn  {
+    position: absolute;
+    max-width: 210px;
+    display: flex;
+    top: 400px;
+    justify-content: center;
+    left: 25px;
+}
+
+#start_btn, #stop_btn, #interval_btn, #reset_btn,  #cont_reset_btn > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 45px;
+    border-radius: 20px;
+    border: 1px solid rgb(33, 37, 33); 
+    font-size: 14px; 
+    color: white;
+    cursor: pointer;
+}
+
+#start_btn {
+    background: #0aab51;
+    left: 50px;
+    position: absolute;
+}
+#stop_int_btn, #cont_reset_btn  {
+    display: flex;
+    justify-content: space-around; 
+    width: 250px;
+}
+
+#stop_btn {
+    background: rgb(194, 0, 0);
+}
+#interval_btn, #reset_btn {
+    background: rgb(33, 37, 33);
+}
+#continue_btn {
+    background: #003cef;
+}
+#stop_int_btn, #cont_reset_btn {
+    visibility: hidden;
+}
